@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Search</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -18,10 +19,23 @@
     </header>
     <main class="main">
         <div class="container">
-            <ul id="recipe-list" class="recipe-list"></ul>
+            <section id="popular-section">
+                <h2 class="popular-title"><i class="fas fa-fire"></i>   Popular recipes</h2>
+                <ul id="popular-recipes" class="recipe-list">
+                    <li class="recipe-item"><a href="recipe.html?recipe=%7B%22title%22%3A%22Spaghetti%20Bolognese%22%2C%22ingredients%22%3A%22Spaghetti%7CBeef%20Minced%7CTomato%20Sauce%7COnion%7CGarlic%7COlive%20Oil%22%2C%22servings%22%3A%224%22%2C%22instructions%22%3A%22Cook%20the%20spaghetti%20as%20per%20the%20instructions.%20Meanwhile%2C%20fry%20the%20minced%20beef%20in%20olive%20oil%2C%20then%20add%20chopped%20onion%20and%20garlic.%20Add%20tomato%20sauce%20and%20simmer.%20Serve%20the%20sauce%20over%20the%20spaghetti.%22%7D" class="recipe-link">Spaghetti Bolognese (4)</a></li>
+                    <li class="recipe-item"><a href="recipe.html?recipe=%7B%22title%22%3A%22Chicken%20Curry%22%2C%22ingredients%22%3A%22Chicken%7CCurry%20Paste%7CCoconut%20Milk%7COnion%7CGarlic%7CGinger%22%2C%22servings%22%3A%224%22%2C%22instructions%22%3A%22Cook%20chicken%20in%20a%20pan%20until%20browned.%20Add%20chopped%20onion%2C%20garlic%2C%20and%20ginger.%20Add%20curry%20paste%20and%20coconut%20milk%20and%20simmer.%20Serve%20with%20rice.%22%7D" class="recipe-link">Chicken Curry (4)</a></li>
+                    <li class="recipe-item"><a href="recipe.html?recipe=%7B%22title%22%3A%22Vegetable%20Stir-fry%22%2C%22ingredients%22%3A%22Broccoli%7CCarrot%7CBell%20Pepper%7CSoy%20Sauce%7CGarlic%7CGinger%22%2C%22servings%22%3A%222%22%2C%22instructions%22%3A%22Stir-fry%20chopped%20vegetables%20in%20a%20pan%20with%20garlic%20and%20ginger.%20Add%20soy%20sauce%20and%20simmer%20for%20a%20few%20minutes.%20Serve%20with%20rice%20or%20noodles.%22%7D" class="recipe-link">Vegetable Stir-fry (2)</a></li>
+                </ul>
+            </section>
+            <section id="favorites-section">
+                <h2 class="favorites-title"><i class="fas fa-heart"></i>   Favorite recipes</h2>
+                <ul id="favorites-recipes" class="recipe-list"></ul>
+            </section>
+            <ul id="recipe-list" class="recipe-list" style="display: none;"></ul>
             <p id="no-recipes" class="no-recipes" style="display: none;">No recipes found. Try another search.</p>
         </div>
     </main>
+    <script src="config.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

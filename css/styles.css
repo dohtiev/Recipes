@@ -158,7 +158,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 20px;
+    padding: 10px 15px;
     font-size: 1.2rem;
     border: none;
     border-radius: 25px;
@@ -202,5 +202,59 @@ body {
 }
 
 .share-button:hover i {
+    transform: translateX(5px);
+}
+
+.popular-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #333;
+}
+
+#popular-section {
+    margin-bottom: 2em;
+}
+
+.favorites-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #333;
+}
+
+#favorites-section {
+    margin-bottom: 2em;
+}
+
+.favorite-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #e5533d;
+    transform: translateY(-3px);
+}
+
+
+.favorite-button i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.favorite-button:hover i {
     transform: translateX(5px);
 }
